@@ -14,14 +14,6 @@ jobs:
     - name: Revisar Repositorio
       uses: actions/checkout@v2
 
-    - name: Instalar JDK 17
-      uses: actions/setup-java@v2
-      with:
-        distribution: 'adopt'
-        java-version: '17'
-
-    - name: Constructor con Maven y Ejecutar CRUD
+    - name: Ejecutar CRUD
       run: |
-        mvn -B package --file Trabajo_final/tienda-libros/pom.xml
-        # Supongamos que tienes un script 'crud_script.sh' para ejecutar las operaciones CRUD
-        ./Trabajo_final/tienda-libros/crud_script.sh
+        .Trabajo_final/crud_script.sh
