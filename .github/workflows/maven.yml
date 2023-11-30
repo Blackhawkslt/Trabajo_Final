@@ -21,7 +21,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
-      run: mvn -B package --file tienda-libros/pom.xml
+      run: mvn -B package --file Trabajo_final/tienda-libros/pom.xml
 
     - name: Run Tests
-      run: mvn test --file tienda-libros/pom.xml
+      run: mvn test --file Trabajo_final/tienda-libros/pom.xml
