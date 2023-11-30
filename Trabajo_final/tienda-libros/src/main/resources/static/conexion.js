@@ -1,26 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     // cargarLibros();
-
-//     document.getElementById('agregarLibroForm').addEventListener('submit', function (event) {
-//         event.preventDefault();
-//         agregarLibro();
-//     });
-// });
-
 const urlObtenerLibros = 'http://localhost:8080/api/libros';
-
-// function cargarLibros() {
-//     fetch(urlObtenerLibros)
-//         .then(response => {
-//             if (!response.ok) {
-//                 console.error(`Error al obtener la lista de libros. Código de estado: ${response.status}, Texto: ${response.statusText}`);
-//                 return [];
-//             }
-//             return response.json();
-//         })
-//         .then(libros => mostrarLibros(libros))
-//         .catch(error => console.error('Error:', error));
-// }
 
 function mostrarLibros(libros) {
     const listaLibros = document.querySelector('#listaLibros tbody');
