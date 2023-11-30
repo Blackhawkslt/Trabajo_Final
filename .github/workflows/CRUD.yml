@@ -26,5 +26,5 @@ jobs:
       run: |
         curl -X POST http://localhost:8080/api/libros -H "Content-Type: application/json" -d '{"titulo": "Ensayo sobre la Ceguera", "autor": "José Saramago", "precio": 50000}'
         curl -X GET http://localhost:8080/api/libros
-        # Agrega más comandos según sea necesario
+
 
