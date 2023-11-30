@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background: linear-gradient(to bottom, #3498db, #ffffff);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: #2c3e50;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        #listaLibros {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+
+        #listaLibros th,
+        #listaLibros td {
+            border: 1px solid #bdc3c7;
+            padding: 15px;
+            text-align: left;
+        }
+
+        #listaLibros th {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        #agregarLibroForm {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+    <title>Libros el Llanero</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+
+    <h1>Bienvenido a Libros el Llanero</h1>
+
+    <table id="listaLibros">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <h2>Agregar Libro</h2>
+    <form id="agregarLibroForm">
+        
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" required>
+
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio" required>
+
+        <button type="submit">Agregar Libro</button>
+    </form>
+
+    
+    <script src="conexion.js"></script>
+</body>
+
+</html>
